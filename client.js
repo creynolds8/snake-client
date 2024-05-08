@@ -7,7 +7,8 @@ const connect = function() {
   });
 
   conn.on('connect', () => {
-    conn.write('Name: CAR')
+    conn.write('Name: CAR');
+    conn.write('Move: up')
     console.log('Connected!');
   });
   conn.on('data', data => {
