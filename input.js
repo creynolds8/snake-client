@@ -3,21 +3,22 @@ let connection;
 const handleUserInput = function(key) {
   switch (key) {
     case '\u0003':
-      process.exit()
+      process.exit();
+      break;
     case '\u0077':
-      connection.write('Move: up')
+      connection.write('Move: up');
       break;
     case '\u0073':
-      connection.write('Move: down')
+      connection.write('Move: down');
       break;
     case '\u0061':
-      connection.write('Move: left')
+      connection.write('Move: left');
       break;
     case '\u0064':
-      connection.write('Move: right')
+      connection.write('Move: right');
       break;
     default:
-      connection.write('no input')
+      connection.write('no input');
   }
 };
 
@@ -27,10 +28,10 @@ const setUpInput = function(conn) {
   stdin.setRawMode(true);
   stdin.setEncoding("utf8");
   stdin.resume();
-  stdin.on('data', handleUserInput)
+  stdin.on('data', handleUserInput);
   return stdin;
 };
 
-module.exports = { 
-  setUpInput 
-}
+module.exports = {
+  setUpInput
+};
