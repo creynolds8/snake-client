@@ -18,6 +18,8 @@ const connect = function() {
   return conn;
 };
 
+const conn = connect();
 module.exports = {
   connect,
+  conn,
 };
