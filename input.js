@@ -22,6 +22,17 @@ const handleUserInput = function(key) {
       //  d
       connection.write('Move: right');
       break;
+    case '\u0071':
+      //  q
+      connection.write('Say: i am snek lord');
+      break;
+    case '\u0065':
+      //  e
+      connection.write('Say: i will be the very best...');
+      break;
+    case '\u0072':
+      //  r
+      connection.write('Say: ..like no one ever was!');
   }
 };
 
