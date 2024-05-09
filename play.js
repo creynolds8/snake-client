@@ -13,3 +13,5 @@ const setupInput = function () {
 
 console.log('Connecting...');
 connect();
+
+module.exports = 'data';
