@@ -8,12 +8,12 @@ const connect = function() {
 
   conn.on('connect', () => {
     conn.write('Name: CAR');
-    conn.write('Move: up')
     console.log('Connected!');
   });
   conn.on('data', data => {
     console.log(data);
-  })
+  });
+
   conn.setEncoding('utf8');
   return conn;
 };
