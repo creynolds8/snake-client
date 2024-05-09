@@ -22,8 +22,6 @@ const handleUserInput = function(key) {
       //  d
       connection.write('Move: right');
       break;
-    default:
-      connection.write('no input');
   }
 };
 
